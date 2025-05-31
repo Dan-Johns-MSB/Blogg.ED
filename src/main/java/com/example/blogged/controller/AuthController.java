@@ -1,8 +1,8 @@
 
-package com.example.simpleblog.controller;
+package com.example.blogged.controller;
 
-import com.example.simpleblog.model.User;
-import com.example.simpleblog.service.UserService;
+import com.example.blogged.model.User;
+import com.example.blogged.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

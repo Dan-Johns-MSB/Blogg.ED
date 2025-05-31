@@ -1,7 +1,7 @@
 
-package com.example.simpleblog.repository;
+package com.example.blogged.repository;
 
-import com.example.simpleblog.model.Comment;
+import com.example.blogged.model.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CommentRepository extends JpaRepository<Comment, Long> {

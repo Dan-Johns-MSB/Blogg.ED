@@ -1,9 +1,8 @@
 
-package com.example.simpleblog.model;
+package com.example.blogged.model;
 
 import jakarta.persistence.*;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 

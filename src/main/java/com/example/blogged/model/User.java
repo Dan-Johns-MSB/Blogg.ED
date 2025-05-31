@@ -1,5 +1,5 @@
 
-package com.example.simpleblog.model;
+package com.example.blogged.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;

@@ -1,12 +1,12 @@
 
-package com.example.simpleblog.controller;
+package com.example.blogged.controller;
 
-import com.example.simpleblog.model.Comment;
-import com.example.simpleblog.model.Post;
-import com.example.simpleblog.model.User;
-import com.example.simpleblog.repository.CommentRepository;
-import com.example.simpleblog.repository.PostRepository;
-import com.example.simpleblog.repository.UserRepository;
+import com.example.blogged.model.Comment;
+import com.example.blogged.model.Post;
+import com.example.blogged.model.User;
+import com.example.blogged.repository.CommentRepository;
+import com.example.blogged.repository.PostRepository;
+import com.example.blogged.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;

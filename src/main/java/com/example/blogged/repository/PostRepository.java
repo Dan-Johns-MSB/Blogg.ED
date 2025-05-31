@@ -1,7 +1,7 @@
 
-package com.example.simpleblog.repository;
+package com.example.blogged.repository;
 
-import com.example.simpleblog.model.Post;
+import com.example.blogged.model.Post;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

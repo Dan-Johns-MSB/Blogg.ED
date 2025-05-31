@@ -1,7 +1,7 @@
-package com.example.simpleblog.service;
+package com.example.blogged.service;
 
-import com.example.simpleblog.model.User;
-import com.example.simpleblog.repository.UserRepository;
+import com.example.blogged.model.User;
+import com.example.blogged.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
