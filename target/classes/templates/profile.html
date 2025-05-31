@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Профіль</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<div class="container">
+    <h2>Профіль користувача</h2>
+    <p><strong>Ім’я користувача:</strong> <span th:text="${user.username}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+    <p><strong>Повне ім’я:</strong>
+        <span th:text="${profile != null} ? ${profile.fullName} : ''"></span>
+    </p>
+    <p><strong>Біографія:</strong>
+        <span th:text="${profile != null} ? ${profile.bio} : ''"></span>
+    </p>
+    <a th:href="@{/profile/edit}">Редагувати профіль</a>
+    <a th:href="@{/}">На головну</a>
+</div>
+</body>
+</html>

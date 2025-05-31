@@ -1,0 +1,95 @@
+
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}*/
+
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background: #000;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('/images/farcry5-bg.gif') no-repeat center center / cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+h2, h3, h4 {
+    font-weight: 700;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff4f1f;
+    padding-bottom: 10px;
+}
+
+button, .btn-link {
+    background-color: #ff4f1f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn-link:hover {
+    background-color: #e63e0d;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+a {
+    color: #ffa16d;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

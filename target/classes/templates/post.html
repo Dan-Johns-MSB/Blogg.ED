@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Пост</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<div class="container">
+    <h2 th:text="${post.title}"></h2>
+    <p>Автор: <strong th:text="${post.author.username}"></strong> <i th:text="${post.getCreatedAtFormatted()}"></i></p>
+    <p th:text="${post.content}"></p>
+    <hr />
+    <h4>Коментарі</h4>
+    <div th:each="comment : ${post.comments}">
+        <p><b th:text="${comment.author.username}"></b> <i th:text="${comment.getCreatedAtFormatted()}"></i></p>
+        <p th:text="${comment.content}"></p>
+    </div>
+    <form th:action="@{'/post/' + ${post.id} + '/comment'}" method="post" th:object="${comment}">
+        <textarea th:field="*{content}"></textarea><br />
+        <button type="submit">Додати коментар</button>
+    </form>
+</div>
+</body>
+</html>
